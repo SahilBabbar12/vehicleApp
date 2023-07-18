@@ -16,4 +16,8 @@ public class VehicleController {
     public Flux<Vehicle> findAllUniqueBrands() {
         return vehicleService.getAllBrands();
     }
+    @GetMapping("/getbrands")
+    public Flux<String> getAllFieldValues() {
+        return vehicleService.getAllFieldValues();
+    }
 }
